@@ -1,13 +1,16 @@
 import React from "react";
-import { SubLayout } from "../../layouts/SubLayout";
 import { MainLayout } from "../../layouts/MainLayout";
+import { SubLayout } from "../../layouts/SubLayout";
+import Write from "../../components/board/Write";
 
-export const ListPage = () => {
+const WritePage = () => {
   return (
     <MainLayout>
       <SubLayout>
-        <h3>장보기 목록</h3>
+        <Write />
       </SubLayout>
     </MainLayout>
   );
 };
+
+export default WritePage;

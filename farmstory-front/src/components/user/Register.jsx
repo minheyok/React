@@ -37,9 +37,9 @@ export const Register = () => {
         const data = await postUser(user);
         console.log(data);
 
-        alert("가입 완료");
+        alert("등록 완료");
 
-        // 로그인 이동(컴포넌트 전환)
+        // 로그인 이동(컴포넌트 라우팅)
         navigate("/user/login");
       } catch (err) {
         console.error(err);
@@ -55,46 +55,44 @@ export const Register = () => {
       <form onSubmit={submitHandler}>
         <h2 className="tit">사이트 이용정보 입력</h2>
         <table border="1">
-          <tbody>
-            <tr>
-              <td>아이디</td>
-              <td>
-                <input
-                  type="text"
-                  name="uid"
-                  value={user.uid}
-                  onChange={changeHandler}
-                  placeholder="아이디 입력"
-                />
-                <button type="button">
-                  <img src="/images/chk_id.gif" alt="중복확인" />
-                </button>
-                <span className="uidResult"></span>
-              </td>
-            </tr>
-            <tr>
-              <td>비밀번호</td>
-              <td>
-                <input
-                  type="password"
-                  name="pass"
-                  value={user.pass}
-                  onChange={changeHandler}
-                  placeholder="비밀번호 입력"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>비밀번호 확인</td>
-              <td>
-                <input
-                  type="password"
-                  name="pass2"
-                  placeholder="비밀번호 입력 확인"
-                />
-              </td>
-            </tr>
-          </tbody>
+          <tr>
+            <td>아이디</td>
+            <td>
+              <input
+                type="text"
+                name="uid"
+                value={user.uid}
+                onChange={changeHandler}
+                placeholder="아이디 입력"
+              />
+              <button type="button">
+                <img src="/images/chk_id.gif" alt="중복확인" />
+              </button>
+              <span className="uidResult"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>비밀번호</td>
+            <td>
+              <input
+                type="password"
+                name="pass"
+                value={user.pass}
+                onChange={changeHandler}
+                placeholder="비밀번호 입력"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>비밀번호 확인</td>
+            <td>
+              <input
+                type="password"
+                name="pass2"
+                placeholder="비밀번호 입력 확인"
+              />
+            </td>
+          </tr>
         </table>
 
         <h2 className="tit">개인정보 입력</h2>

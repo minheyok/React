@@ -10,7 +10,6 @@ export const Latest = () => {
           </a>
           <img src="./images/main_latest1_img.jpg" alt="이미지" />
           <table border="0">
-            <tbody></tbody>
             <tr>
               <td>&gt;</td>
               <td>

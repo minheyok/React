@@ -1,4 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
+{
+  /*import { createSlice } from "@reduxjs/toolkit";
 import Cookies from "js-cookie";
 
 const loadStateFromCookie = () => {
@@ -36,4 +37,5 @@ const loginSlice = createSlice({
 });
 
 export const { login, logout } = loginSlice.actions;
-export default loginSlice.reducer;
+export default loginSlice.reducer;*/
+}
